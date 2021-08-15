@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="style.css">
+    <title>The Weather</title>
+</head>
+<body>
+
+    <div class="loader-container">
+        <div class="loading"></div>
+    </div>
+    
+    <section class="container center">
+        <div class="left-container">
+            <div class="logo">
+                <h3 class="animate__animated animate__flipInX">the.weather</h3>
+            </div>
+            <div class="weather-result hide animate__animated animate__flipInX">
+                <h1>16&deg;</h1>
+                <h2>London</h2>
+                <div class="icon">
+                    <img src="img/icons/1.svg" alt="">
+                    <span>Cloudy</span>
+                </div>
+            </div>
+        </div>
+        <div class="right-container">
+            <form class="form">
+                <input type="text" placeholder="Enter Location" name="city" id="inputForm" class="animate__animated animate__fadeIn">
+                <span class="center animate__animated animate__fadeIn">Press Enter</span>
+            </form>
+        </div>
+    </section>
+   
+    <script src="scripts.js/forcast.js" defer></script>
+    <script src="scripts.js/app.js" defer></script>
+</body>
+</html>
